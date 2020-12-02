@@ -114,6 +114,12 @@ button {
   justify-content: center;
 }
 
+@media (min-width: 901px){
+  .extra-padding {
+    padding: 20px 180px;
+  }  
+}
+
 @media (max-width: 900px) {
   body {
     padding: 0;
@@ -122,6 +128,9 @@ button {
     display: flex;
     flex-flow: column wrap;
   }
+  /* .col {
+    justify-content: center;
+  } */
 }
 
 .text-center {
@@ -146,10 +155,6 @@ input {
 
 .white-text {
   color: #ffffff;
-}
-
-.extra-padding {
-  padding: 20px 180px;
 }
 
 .testimonial {
