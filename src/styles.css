@@ -4,6 +4,7 @@
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   width: 100vw;
   margin: 0;
   padding: 20px 150px;
@@ -13,7 +14,6 @@ body {
 .navbar {
   display: flex;
   padding: 1.8rem;
-  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: #ffffff;
 }
@@ -93,6 +93,7 @@ nav {
   font-size: 1.1rem;
   cursor: pointer;
 } */
+
 
 .flex-grid {
   display: flex;
