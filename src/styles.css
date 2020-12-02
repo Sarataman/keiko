@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 100vw;
   margin: 0;
   padding: 20px 150px;
@@ -15,7 +15,7 @@ body {
   display: flex;
   padding: 1.8rem;
   font-weight: bold;
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 
 .nav-item {
@@ -41,27 +41,28 @@ body {
     flex-direction: column;
   }
   .nav-item {
-      display: none;
+    display: none;
   }
   .nav-right {
     margin-left: 0;
   }
   .nav-toggle {
-      align-self: flex-end;
-      display: initial;
-      position: absolute;
-      cursor: pointer;
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
   }
   .toggle_Show {
-      display: flex;
+    display: flex;
   }
 
   .nav-link {
-      padding-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 }
 
 a {
+  color: #343a40;
   text-decoration: none;
   font-size: 1rem;
   margin-right: 1rem;
@@ -72,7 +73,7 @@ a:hover {
 }
 
 .nav-brand {
-  font-family: 'Almendra', serif;
+  font-family: "Almendra", serif;
   font-weight: bold;
   font-size: 1.6rem;
 }
@@ -94,6 +95,21 @@ nav {
   cursor: pointer;
 } */
 
+h1 {
+  font-size: 40px;
+}
+
+.h2-text {
+  font-size: 24px;
+}
+
+button {
+  color: #ffffff;
+  background: #ef5b59;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 4px;
+}
 
 .flex-grid {
   display: flex;
@@ -104,6 +120,7 @@ nav {
 }
 .col {
   flex: 1;
+  padding: 10px;
 }
 
 @media (max-width: 900px) {
@@ -112,7 +129,7 @@ nav {
   }
   .flex-grid {
     display: flex;
-    flex-flow: column wrap; 
+    flex-flow: column wrap;
   }
 }
 
