@@ -4,6 +4,7 @@
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Roboto", sans-serif;
   /* width: 100vw; */
   margin: 0;
@@ -11,6 +12,7 @@ body {
 }
 
 /*Nav*/
+
 .navbar {
   display: flex;
   padding: 1.8rem;
@@ -65,18 +67,18 @@ a {
   color: #343a40;
   text-decoration: none;
   font-size: 1rem;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
   cursor: pointer;
 }
 
 a:hover {
-  color: black;
+  color: #ef5b59;
+  font-size: 1.1rem;
 }
 
 .nav-brand {
   font-family: "Almendra", serif;
   font-weight: bold;
-  font-size: 1.6rem;
 }
 
 nav {
@@ -84,12 +86,22 @@ nav {
   align-items: center;
 }
 
+.theme-toggler {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
 h1 {
-  font-size: 40px;
+  font-size: 2.5em;
 }
 
 .h2-text {
-  font-size: 24px;
+  font-size: 1.4rem;
+  color: #343a40c0;
+}
+
+.h3-text {
+  font-size: 1.2rem;
   color: #343a40c0;
 }
 
@@ -102,25 +114,51 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  border: 2px solid #000000;
+  color: #ef5b59;
+  border: 1px solid #ef5b59;
+  background: #ffffff;
+}
+
+.white-btn {
+  color: #ef5b59;
+  border: 1px solid #ef5b59;
+  background: #ffffff;
+}
+
+.white-btn:hover {
+  color: #ffffff;
+  background: #ef5b59;
+}
+
 .flex-grid {
   display: flex;
   flex-wrap: wrap;
-  /* padding: 20px 150px; */
+  justify-content: center;
+  margin: 0 auto;
+  padding: 3% 10%;
 }
 
 .col {
-  flex: 1;
-  padding: 0 20px;
+  flex: 3;
+  /* flex-basis: 2; */
   justify-content: center;
+  margin: 0 auto;
 }
 
-@media (min-width: 901px){
-  .extra-padding {
-    padding: 20px 180px;
-  }  
+@media (min-width: 1001px){
+  #hero-img {
+    width: 38vw;
+  }
+  
+  .sec-1 {
+    height: 80vh;
+  }
+  
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   body {
     padding: 0;
   }
@@ -128,9 +166,19 @@ button {
     display: flex;
     flex-flow: column wrap;
   }
-  /* .col {
-    justify-content: center;
-  } */
+  .column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .h2-text {
+    font-size: 1.3rem;
+  }
+
+  .logo {
+    margin-top: -25px;
+  }  
+
 }
 
 .text-center {
@@ -138,8 +186,15 @@ button {
 }
 
 
-img {
-  margin: 20px;
+.brands {
+  margin: 2%;
+}
+
+.brand-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .sec-2 {
@@ -196,4 +251,8 @@ input {
 
 .bold {
   font-weight: bold;
+}
+
+section {
+  padding: 3%;
 }
